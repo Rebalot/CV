@@ -9,17 +9,34 @@
 <body>
     <div class="ContenidoGeneral">
         <nav>
-            <a class="logo">
-                <svg class="img">
-                
-                </svg>
-                <span class="name">Alberto</span>
-            </a>
-            <ul class="nav">
-                <li>Experiencia</li>
-                <li>Proyectos</li>
-                <li>Web Developer</li>
-            </ul>
+            <div class="nav_Contenedor">
+                <a class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="logo_img" viewBox="0 0 16 16">
+                        <path d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A5 5 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A5 5 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623M4 7v4a4 4 0 0 0 3.5 3.97V7zm4.5 0v7.97A4 4 0 0 0 12 11V7zM12 6a4 4 0 0 0-1.334-2.982A3.98 3.98 0 0 0 8 2a3.98 3.98 0 0 0-2.667 1.018A4 4 0 0 0 4 6z"/>
+                    </svg>
+                    <span class="logo_name">Alberto</span>
+                </a>
+                <label class="label_menu" for="menu_list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </label>
+                <input type="checkbox" id="menu_list">
+                <ul class="nav_ul">
+                    <li class="nav_li">
+                        <a href="#Experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="#Habilidades">Skills</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="#Proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="#WebSkills">Web Developer</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <header>
             <div class="image-profile">
@@ -32,25 +49,24 @@
                 <div class="profile-description">
                     <p>Ingeniero en Mecatrónica y programador web junior con experiencia desarrollando en <span>HTML, CSS, JS</span>...</p>
                 </div>
+                <div class="Contacto">
+                    <a href="https://www.linkedin.com/in/alberto-alcocer-espinosa-2b1b6b212/" class="Contacto_Icons">
+                        <div class="Contacto_imgContenedor">
+                            <img src="./images/LinkedIn.png" alt="LinkedIn_Icon">
+                        </div>
+                        <p>LinkedIn</p>
+                    </a>
+                    <a href="https://github.com/Rebalot" class="Contacto_Icons">
+                        <div class="Contacto_imgContenedor">
+                            <img src="./images/Github.png" alt="Github_Icon">
+                        </div>
+                        <p>Github</p>
+                    </a>
+                </div>
             </div>
         </header>
         
         <main>
-            <aside class="Columna1">
-                <section id="Informacion">
-                    <div class="Section-Title">
-                        <div class="Img-Title">
-                            <img src="./images/Info_Icon.png" alt="Info Icon">
-                        </div>
-                        <h2>Información personal</h2>
-                    </div>
-                    <ul class="Info">
-                        <li>
-                            Estudios en Universidad Autónoma del Carmen
-                        </li>
-                    </ul>
-                </section>
-            </aside>
             <section id="Experiencia">
                 <div class="Section-Title">
                     <div class="Img-Title">
@@ -60,9 +76,9 @@
                 </div>
                 <ul class="Jobs-Index">
                     <li class="Jobs">
-                        <p class="time">15/07/2022 - 15/12/2023</p>
-                        <h3>Service Engineer | Acet Consultores S.A. de C.V.</h3>
-                        <div class="Job-Descrip">
+                        <article class="Job-Descrip">
+                            <p class="time">15/07/2022 - 15/12/2023</p>
+                            <h3>Service Engineer | Acet Consultores S.A. de C.V.</h3>
                             <h4>Al servicio de Razz Soluciones Industriales:</h4>
                             <ul>
                                 <li>
@@ -70,7 +86,6 @@
                                 <p class="Activity">Levantamiento para refaccionamiento del sistema de control de Grúas Pórtico sobre neumáticos CIMOLAI MST 125t.</p>
                                 </li>
                             </ul>
-                           
                             <h4>Al servicio de Schneider Electric México:</h4>
                             <ul>
                                 <li>
@@ -94,20 +109,19 @@
                                     <p class="Activity">Instalación de HMI's, switches de comunicación, cables de fibra óptica y actualización de gráficos del ESD.</p>
                                 </li>
                             </ul>
-                        </div>
+                        </article>
                     </li>
     
                     <li class="Jobs">
-                        <p class="time">23/08/2021 – 23/11/2021</p>
-                        <h3>Auxiliar de Operaciones | Construcción, Mantenimiento y Soluciones al Campo Energético S.A de C.V.
-                        </h3>
-                        <div class="Job-Descrip">
+                        <article class="Job-Descrip">
+                            <p class="time">23/08/2021 – 23/11/2021</p>
+                            <h3>Auxiliar de Operaciones | Construcción, Mantenimiento y Soluciones al Campo Energético S.A de C.V.</h3>
                             <p class="Activity-single">Revisión e integración de reportes de inspección mecánica (métodos de inspección VT, UT, PT y MT). Correción de isométricos. Actualización de certificados y procedimientos para inspección.</p>
-                        </div>
+                        </article>
                     </li>   
                 </ul>
             </section>
-            <aside class="Columna2">
+            <aside class="Columna1">
                 <section id="Habilidades">
                     <div class="Section-Title">
                         <div class="Img-Title">
@@ -115,14 +129,16 @@
                         </div>
                         <h2>Skills</h2>
                     </div>
-                    <ul class="Skills">
-                        <li>
-                            <a class="Skill_WebDeveloper" href="#WebSkills">
-                                <h4>Web Developer...</h4>
+                    <div class="Skills">
+                        
+                        <a class="Skill_WebDeveloper" href="#WebSkills">
+                            <p>Web Developer...</p>
+                            <div class="Skill_WDimg">
                                 <img src="./images/Manitaclick.png" alt="ClickAqui">
-                            </a>
-                        </li>
-                        <li>
+                            </div>
+                        </a>
+                        
+                        <div class="Skill_contenedor">
                             <h4>Software</h4>
                             <ul>
                                 <li>
@@ -146,8 +162,8 @@
                                     <span class="bar"><span class="Tristation"></span></span>
                                 </li>
                             </ul>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="Skill_contenedor">
                             <h4>Aptitudes</h4>
                             <ul>
                                 <li>Resolución de problemas</li>
@@ -156,16 +172,16 @@
                                 <li>Gestión de la presión</li>
                                 <li>Trabajo en equipo</li>
                             </ul>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="Skill_contenedor">
                             <h4>Protocolos</h4>
                             <ul>
                                 <li>Ethernet IP</li>
                                 <li>TSAA</li>
                                 <li>DDE</li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </section>
             </aside>
             <section id="Proyectos">
@@ -174,6 +190,37 @@
                         <img src="./images/Portafolio_Icon.png" alt="Proyectos Icon">
                     </div>
                     <h2>Proyectos</h2>
+                </div>
+                <div class="Proyectos">
+                    <div class="Proyect_imgContainer">
+                        <img src="./images/Mokepon.png">
+                    </div>
+                    <div class="Proyect_descripContainer">
+                        <h3>MOKEPON!</h3>
+                        <div class="Proyect_apps">
+                            <div class="Proyect_appContainer">
+                                <div class="Proyect_appContainer_img">
+                                    <img src="./images/html_logo.png">
+                                </div>
+                                <h5>HTML</h5>
+                            </div>
+                            <div class="Proyect_appContainer">
+                                <div class="Proyect_appContainer_img">
+                                    <img src="./images/css_logo.png">
+                                </div>
+                                    <h5>CSS</h5>    
+                            </div>
+                            <div class="Proyect_appContainer">
+                                <div class="Proyect_appContainer_img">
+                                    <img src="./images/js_logo.png">
+                                </div>
+                                    <h5>JavaScript</h5>
+                            </div>
+                        </div>
+                        <div class="Proyect_descrip">
+                            <p>Juego interactivo basado en el combate de "mokepones". Dependiendo el tipo de mokepon, será la efectividad de su ataque contra el mokepon rival. Además, existe la probabilidad de esquivar el ataque o de realizar un ataque crítico.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="WebSkills">
@@ -185,20 +232,20 @@
                 </div>
                 <div class="WebSkills">
                     <div class="WebSkill_contenedor">
-                        <div>
+                        <div class="WebSkill_contenedor_img">
                             <img src="./images/html_logo.png" alt="HTML logo">
                         </div>
                         <p>HTML</p>
                     </div>
                     <div class="WebSkill_contenedor">
-                        <div>
+                        <div class="WebSkill_contenedor_img">
                             <img src="./images/css_logo.png" alt="CSS logo">
                         </div>
                         
                         <p>CSS</p>
                     </div>
                     <div class="WebSkill_contenedor">
-                        <div>
+                        <div class="WebSkill_contenedor_img">
                             <img src="./images/js_logo.png" alt="JS logo">
                         </div>
                         
@@ -212,11 +259,11 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <!-- <footer>
             <div class="Contacto">
 
             </div>
-        </footer>
+        </footer> -->
     </div>
 </body>
 </html>
